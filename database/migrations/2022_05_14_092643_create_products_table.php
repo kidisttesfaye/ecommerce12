@@ -17,9 +17,6 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
-            $table->string('unit')->nullable();
-            $table->double('price',82)->nullable();
-            $table->integer('quantity')->nullable();
         });
     }
 
