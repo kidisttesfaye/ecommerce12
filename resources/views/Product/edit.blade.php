@@ -1,17 +1,16 @@
-
 @extends('layouts.app')
 @section('content')
 <div class="container">
  <div class="row justify-content-center">
  <div class="col-md-8">
  <div class="card">
- <div class="card-header">{{ __('Product Registration') }}</div>
+ <div class="card-header">{{ __('Products  Edit') }}</div>
  <div class="card-body">
- <form method="POST" action="{{ route('Product/register') }}"
+ <form method="POST" action="{{ route('product/register') }}"
 >
  @csrf
  <div class="form-group row">
- <label for="name" class="col-md-4 col-formlabel text-md-right">{{ __('Product') }}</label>
+ <label for="name" class="col-md-4 col-formlabel text-md-right">{{ __('name') }}</label>
  <div class="col-md-6">
  <input id="name" type="text" class="formcontrol @error('name') isinvalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="
 name" autofocus>
@@ -74,7 +73,7 @@ id" autofocus>
  <div class="form-group row mb-0">
  <div class="col-md-6 offset-md-4">
  <button type="submit" class="btn btn-primary">
- {{ __('Registration') }}
+ {{ __('Update') }}
  </button>
  </div>
  </div>

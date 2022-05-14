@@ -1,19 +1,18 @@
 <?php
 
 namespace App\Models;
-
+use App\Http\Controllers\ProductController;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class product extends Model
+class Product extends Model
 {
     use HasFactory;
-    protected  $fillable = [
-        'name',
+    protected $fillable=[
         'id',
-        'unit',
+        'name',
+        'unite',
         'price',
-        'quantity'];
-        
-
+        'quantity',
+    ];
 }
